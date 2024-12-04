@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11FUTBOL</title>
+    <style>
+        /* Estilo para el fondo */
+        body {
+            background-image: url('img/FONDO.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+            background-position: center center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            height: 100vh; /* Hace que la imagen ocupe toda la ventana del navegador */
+            margin: 0; /* Elimina el margen predeterminado del navegador */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* Estilo para el título */
+        h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 30px; /* Espacio debajo del título */
+        }
+
+        /* Estilo para el formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilo para el selector de equipos */
+        select {
+            font-size: 1rem; /* Aumenta el tamaño del texto */
+            padding: 15px; /* Espaciado dentro del cuadro */
+            width: 300px; /* Ancho del selector */
+            margin-bottom: 30px; /* Espacio debajo del selector */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        /* Estilo para el bloque de explicación */
+        .azalpena {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 20px; /* Espacio debajo del texto */
+        }
+
+        /* Enlaces */
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Estilo para el carrito */
+        .saskia {
+            position: absolute; /* Posiciona el carrito en la parte superior */
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: white;
+            background-color: #1e73be;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        /* Estilo para el header */
+        header {
+            width: 97%; /* Hace que el header ocupe todo el ancho */
+            padding: 20px; /* Espaciado interno */
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+            color: white;
+            display: flex;
+            justify-content: space-between; /* Distribuye los elementos entre los extremos */
+            align-items: center; /* Alinea verticalmente */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Contenedor para centrar el título */
+        .header-title {
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con enlace al carrito -->
+    <header>
+        <a href="saskia.html" class="saskia">🛒</a>
+        <div class="header-title">
+            <h1>11FUTBOL</h1>
+        </div>
+    </header>
+
+    <!-- Bloque de explicación -->
+    <div class="azalpena">
+        <p>Ongi etorri 11FUTBOL web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu</p>
+        <p><a href="contacto.html">Contacto</a> | <a href="politica.html">Política de privacidad</a></p>
+    </div>
+
+    <!-- Formulario de selección de equipos -->
+    <form method="get">
+        <select name="equipos" id="equipos" onchange="location = this.value;">
+            <option value="">-- Aukeratu nahi duzun taldea --</option>
+            <option value="alaves.html">Alaves</option>
+            <option value="ath.html">Athletic</option>
+            <option value="atletico.html">Atletico de Madrid</option>
+            <option value="bar.html">Barcelona</option>
+            <option value="cel.html">Celta de Vigo</option>
+            <option value="gtf.html">Getafe</option>
+            <option value="gir.html">Girona</option>
+            <option value="leg.html">Leganés</option>
+            <option value="lpm.html">Las Palmas</option>
+            <option value="mll.html">Mallorca</option>
+            <option value="osa.html">Osasuna</option>
+            <option value="rv.html">Rayo Vallecano</option>
+            <option value="bet.html">Real Betis</option>
+            <option value="rma.html">Real Madrid</option>
+            <option value="rso.html">Real Sociedad</option>
+            <option value="sev.html">Sevilla</option>
+            <option value="valencia.html">Valencia</option>
+            <option value="valla.html">Valladolid</option>
+            <option value="villa.html">Villarreal</option>
+        </select>
+    </form>
+</body>
+</html>
